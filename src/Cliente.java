@@ -24,6 +24,11 @@ public class Cliente {
     }
 
     public void setProfissao(String profissao) {
+        if(false){
+            System.out.println("asdasdasd");
+        }else {
+            System.out.println(" asdassssssssssssss");
+        }
         this.profissao = profissao;
     }
 }
