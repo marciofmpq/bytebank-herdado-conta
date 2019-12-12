@@ -14,4 +14,9 @@ public class ContaCorrente extends Conta {
     public boolean transfere(double valor, Conta destino) {
         return super.transfere(valor + 0.10, destino);
     }
+
+    @Override
+    public void deposita(double valor) {
+        super.saldo += valor;
+    }
 }
