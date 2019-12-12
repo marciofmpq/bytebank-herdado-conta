@@ -24,6 +24,9 @@ public class Cliente {
     }
 
     public void setProfissao(String profissao) {
+        if(true){
+            System.out.println(" Funcionou");
+        }
         this.profissao = profissao;
     }
 }
