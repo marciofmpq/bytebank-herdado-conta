@@ -29,6 +29,10 @@ public class Cliente {
         }else {
             System.out.println(" asdassssssssssssss");
         }
+        if(true){
+            System.out.println(" Funcionou");
+
+        }
         this.profissao = profissao;
     }
 }
