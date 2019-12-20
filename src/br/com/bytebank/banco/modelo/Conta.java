@@ -1,3 +1,5 @@
+package br.com.bytebank.banco.modelo;
+
 public abstract class Conta {
     protected double saldo;
     private int agencia;
@@ -15,11 +17,11 @@ public abstract class Conta {
 
     public Conta (int agencia, int numero){
         Conta.total++;
-//        System.out.println("Total de Contas : " + Conta.total);
+//        System.out.println("Total de Contas : " + br.com.bytebank.banco.modelo.Conta.total);
         this.agencia = agencia;
         this.numero = numero;
 //        this.saldo = 100;
-//        System.out.println("Criando Conta número : " + this.numero);
+//        System.out.println("Criando br.com.bytebank.banco.modelo.Conta número : " + this.numero);
 
     }
 
@@ -50,7 +52,7 @@ public abstract class Conta {
 
         /*public void setNumero(int novoNumero){
             if (novoNumero <=0 ){
-                System.out.println("Valor de Conta não permitido");
+                System.out.println("Valor de br.com.bytebank.banco.modelo.Conta não permitido");
             }
             this.numero = novoNumero;
             }*/
