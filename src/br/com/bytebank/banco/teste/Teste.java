@@ -1,21 +1,25 @@
 package br.com.bytebank.banco.teste;
 
+import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
-import br.com.bytebank.banco.modelo.ContaPoupanca;
+import br.com.bytebank.banco.modelo.GuardadorDeContas;
 
 public class Teste {
     public static void main(String[] args) {
-//        String dado = "040.969.123-28";
+        GuardadorDeContas guardador = new GuardadorDeContas();
 
-        Object cc = new ContaCorrente(69,123);
-        Object cp = new ContaPoupanca(123,196);
+        Conta cc = new ContaCorrente(69,159);
+        guardador.adiciona(cc);
 
-        System.out.println(cc);
-        System.out.println(cp);
+        Conta cc2 = new ContaCorrente(69,259);
+        guardador.adiciona(cc2);
 
-//        dado = dado.replaceAll("[^0-9]+", "");
+        int tamanho = guardador.getQuantidadeDeElementos();
+        System.out.println(tamanho);
 
-//        System.out.println(dado);
+        Conta ref = guardador.getReferencia(0);
+        System.out.println(ref.getNumero());
+
 
     }
 }
